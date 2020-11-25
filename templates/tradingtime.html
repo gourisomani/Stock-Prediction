@@ -1,0 +1,39 @@
+﻿{% extends 'base_layout.html' %}
+{% load static %}
+{% block content %}
+<link rel="stylesheet" href="{% static 'TTcss.css' %}">
+<link rel="stylesheet" href="{% static 'base.css' %}">
+
+
+<h1>THIS BLOG IS TO DESCRIBE THE TIMINGS OF INDIAN STOCK MARKET.</h1>
+<br>
+<div class="para">
+<br>
+    Indian Stock Market is open from Monday to Friday.It is closed on weekends i.e, Saturdays and Sundays.
+<br>
+    And if there are any national holidays then they are predeclared and stock markets remain closed on those days.
+<br>
+<br>
+<h2>    Indian Stock Market Time takes place in 3 session:</h2>
+<br>
+<h3>1.Pre Open Session which is open for 15 minutes(9:00am to 9:15am) which is again divided into  3 session.</h3>
+<br>
+    a)Ordinary Entry Session(9:am to 9:08am).
+<br>
+    b)Order Matching Session(9:08am to 9:12am).
+<br>
+    c)Buffer Session(9:12am to 9:15am).
+<br>
+    IMPORTANT: Traders can buy or sell in pre-open session.
+<br>
+<br>
+<h3>2.Normal Market Session</h3>
+<br>
+    Normal Market Session is regularly trading from 9:15am to 3:30pm.It's actual session in which most of the trades takes place.
+<br>
+<br>
+<h3>3.Post Closing Session</h3>
+<br>
+    It's start from 3:40pm and ends at 4:00pm.During this session buying and selling shares  take place at closing price.Normal traders could not trade at this time.
+</div>
+    {% endblock %}

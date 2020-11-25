@@ -1,0 +1,86 @@
+{% extends 'base_layout.html' %}
+{%load static%}
+{% block content %}
+<link rel="stylesheet" href="{% static 'stylesheets.css' %}">
+<link rel="stylesheet" href="{% static 'base.css' %}">
+
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;756;800&display=swap" rel="stylesheet">
+
+
+
+<div class="row stocks">
+    <span style="color:rgb(255, 192, 0)">S</span>
+    <span style="color:rgb(235, 235, 235)">T</span>
+    <span style="color:rgb(146, 208, 80)">O</span>
+    <span style="color:rgb(235, 235, 235)">C</span>
+    <span style="color:rgb(255, 0, 0)">K</span>
+    &nbsp;
+    <span style="color:rgb(255, 192, 0)">P</span>
+    <span style="color:rgb(235, 235, 235)">R</span>
+    <span style="color:rgb(146, 208, 80)">E</span>
+    <span style="color:rgb(235, 235, 235)">D</span>
+    <span style="color:rgb(255, 0, 0)">I</span>
+    <span style="color:rgb(255, 192, 0)">C</span>
+    <span style="color:rgb(235, 235, 235)">T</span>
+    <span style="color:rgb(255, 0, 0)">I</span>
+    <span style="color:rgb(235, 235, 235)">O</span>
+    <span style="color:rgb(255, 192, 0)">N</span>
+</div>
+
+
+<centre>
+    {% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-info" id="msg" role="alert">
+        {{ message }}
+    </div>
+    {% endfor %}
+    {% endif %}
+</centre>
+
+
+<div class="searchbox">
+    
+    <form action="search" method="GET">
+        {% csrf_token %}
+        <input type="text" name="company" placeholder="Search for Companies...."><br>
+        <input type="submit" value="Search">
+    </form>
+</div>
+
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <span class="tag tag-teal">Learn Stocks</span>
+                    <h5 class="card-title">LEARN TO PREDICT</h5><br>
+                    <p class="card-text">
+                        Not everybody can predict the stocks perfectly but only good learners can....
+                    </p>
+                    <a href="http://127.0.0.1:8000/index/predictStocks" class="btn btn-primary">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="card">
+                <div class="card-body">
+                    <span class="tag tag-teal">Stocks Time</span>
+                    <h5 class="card-title">STOCK MARKET TIME</h5><br>
+                    <p class="card-text">
+                        As you can't make any of the trade at any point in time but it is only possible ....
+                    </p>
+                    <a href="http://127.0.0.1:8000/index/tradingtime" class="btn btn-primary">LEARN MORE</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock %}

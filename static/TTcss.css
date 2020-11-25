@@ -1,0 +1,20 @@
+body {
+    background-image: url("Image/pssback.jpg");
+    background-size: cover;
+    font-family: 'Dosis', sans-serif;
+    color: black;
+
+}
+.para{
+    padding-left: 30px;
+    padding-bottom: 20px;
+    font-size: 25px;
+    color: black;
+
+}
+.para h2{
+    font-size: 45px;
+}
+.para h3{
+    font-size: 42px;
+}

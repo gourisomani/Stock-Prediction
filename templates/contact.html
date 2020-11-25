@@ -1,0 +1,23 @@
+﻿{% extends 'base_layout.html' %}
+{% load static %}
+{% block content %}
+
+
+<link rel="stylesheet" href="{% static 'base.css' %}">
+<link rel="stylesheet" href="{% static 'mail.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;756;800&display=swap" rel="stylesheet">
+
+
+<div class="container">
+    <form action="mailto:predictorstock@gmail.com" method="post" enctype="text/plain">
+        Name:<br>
+        <input type="text" name="name"><br>
+        E-mail:<br>
+        <input type="text" name="mail"><br>
+        Comment:<br>
+        <input type="text" name="comment" size="50"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+    {% endblock %}

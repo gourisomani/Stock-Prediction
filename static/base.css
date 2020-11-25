@@ -1,0 +1,51 @@
+@media(min-width:0px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-color: #bdeaee;
+        background-size: cover;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .navbar-style {
+        background-color: rgb(0, 0, 0);
+        box-shadow: 0 20px 40px #ebf4f6;
+        text-transform: capitalize;
+    }
+
+    .logo {
+        height: 48px;
+        padding: 2px 5px;
+    }
+
+    .icon-bar {
+        background: darkorange;
+    }
+
+    li a {
+        color: yellow;
+        font-size: 30px;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .about {
+        background-color: rgb(26, 25, 25);
+        position: absolute;
+        padding-bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+        .about h4 {
+            color: rgb(72, 160, 241);
+            display: inline-block;
+            font-size: 30px;
+        }
+
+    .fa {
+        color: white !important;
+    }
+}

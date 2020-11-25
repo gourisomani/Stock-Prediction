@@ -1,0 +1,51 @@
+@media(min-width:0px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url("Image/pssback.jpg");
+        background-size: cover;
+        font-size: 20px;
+        padding: 40px 150px;
+        color: black;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    header {
+        height: 100px;
+    }
+
+    .navbar-style {
+        box-shadow: 0 20px 40px black;
+        text-transform: capitalize;
+    }
+
+    .logo {
+        height: 48px;
+        padding: 2px 5px;
+    }
+
+    .icon-bar {
+        background: darkorange;
+    }
+
+    li a {
+        color: yellow;
+        font-size: 25px;
+        font-family: 'Dosis', sans-serif;
+    }
+
+    .footer {
+        top: 100px;
+    }
+
+    .about h1 {
+        top: 800px;
+        font-size: 40px;
+        color: yellowgreen;
+    }
+
+    .about h3 {
+        font-size: 20px;
+        color: black;
+    }
+}

@@ -1,0 +1,23 @@
+body {
+    background-image: url("Image/pssback.jpg");
+    background-size: cover;
+}
+
+.tag1{
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+
+}
+
+.graph{
+    left: 40%;
+
+}
+.parameters{
+    font-family: 'Dosis', sans-serif;
+    padding-top: 100px;
+    padding-left: 500px;
+    padding-bottom: 100px;
+
+
+}

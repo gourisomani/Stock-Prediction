@@ -1,0 +1,77 @@
+{% extends 'base_layout.html' %}
+{%load static%}
+{% block content %}
+
+
+
+
+<head>
+    <title>Company Stocks</title>
+    <link rel="stylesheet" href="{% static 'cstocks.css' %}">
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;756;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="tag1">
+        <h1>COMPANY: {{companynm}}</h1>
+        <br>
+        <br>
+    
+        <img class="graph" src="{% static 'Image\prediction.png' %} " width="1000px" height="500px">
+    </div>
+         <div class="parameters">
+        <h2> {{day}} {{PriceTom}}</h2>
+        <br>
+        <h2> BEST SELLING PRICE: $ {{SP}}</h2>
+        <h2> DAY: {{SPD}}</h2>
+        <br>
+        <h2> BEST BUYING PRICE: $ {{BP}}</h2>
+        <h2> DAY: {{BPD}}</h2>
+        <br>
+    </div>
+     
+
+        <h2>
+            <table class="t01">
+                <tr>
+                    {% for data in Table %}
+                    <th>{{ data }}</th>
+                    {% endfor %}
+                </tr>
+
+                {% for i, r in Table.iterrows %}
+                <tr>
+                    <td> {{ r.DATE }} </td>
+                    <td>$ {{r.PRICE}} </td>
+                    {% endfor %}
+
+                </tr>
+
+                <style>
+                    table, th, td {
+                        border: 5px solid black;
+                        /* border-collapse: collapse; */
+                    }
+
+                    th, td {
+                        padding: 15px;
+                        text-align: center;
+                    }
+
+                    table.t01 {
+                        font-family: 'Dosis', sans-serif;
+                        width: 40%;
+                        margin-left: 30%;
+                        background-color: #d0eefd;
+                    }
+                </style>
+
+            </table>
+        </h2>
+        <br />
+</body>
+
+  {% endblock %}
+

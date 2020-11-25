@@ -1,0 +1,56 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>STOCK PREDICTION</title>
+    <link rel="stylesheet" href="{% static 'base.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@700;756;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="https://use.fontawesome.com/2683c6d593.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta charset="UTF8">
+</head>
+<body>
+    <div class="navigation">
+        <header class="header">
+            <nav class="navbar navbar-style">
+
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#micon">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img class="logo" src="{%static 'Image/logo.png'%}">
+                </div>
+                <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="http://127.0.0.1:8000/index">HOME</a></li>
+                        <li><a href="https://www.moneycontrol.com/">NEWS</a></li>
+                        <li><a href="http://127.0.0.1:8000/index/contact">CONTACT</a></li>
+                        <li><a href="http://127.0.0.1:8000/index/about">ABOUT US</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </header>
+    </div>
+    {% block content %}
+    {% endblock %}
+    <footer class="about">
+        <h4 class="fork">FORK US AT</h4>
+        <i class="fa fa-github" style="font-size:35px"></i>
+        <h6> @2020 all rights reserved</h6>
+
+
+    </footer>
+
+</body>
+</html>
